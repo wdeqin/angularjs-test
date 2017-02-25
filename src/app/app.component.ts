@@ -6,7 +6,6 @@ import { Component, Input, OnInit } from '@angular/core';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css',],
 })
-
 export class AppComponent {
     inputText: string;
 }

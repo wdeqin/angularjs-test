@@ -1,5 +1,7 @@
 <div>
+<hero-form></hero-form>
 <label>Input Box:</label>
 <input [(ngModel)]="inputText"/>
 <p>{{inputText}}</p>
+<content [content]="inputText"></content>
 </div>
