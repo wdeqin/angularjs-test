@@ -17,7 +17,7 @@ export class HeroFormComponent {
         'Flashing',
     ];
 
-    model = new Hero(18, 'Dr IQ', this.powers[0], 'Chunk Overstree');
+    model = new Hero(18, 'Dr. IQ', this.powers[0], 'Chunk Overstreet');
 
     submitted = false;
 
@@ -27,6 +27,10 @@ export class HeroFormComponent {
 
     get diagnostic(): string {
         return JSON.stringify(this.model);
+    }
+
+    newHero(): void {
+        this.model = new Hero(42, '', '');
     }
 }
 
